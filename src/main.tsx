@@ -1,14 +1,31 @@
 import * as React from 'react'
 import * as ReactDOM from 'react-dom/client'
 import { WagmiConfig } from 'wagmi'
-
-import { App } from './App'
+import './style.css'
+import { App } from './wagmi/App'
 import { config } from './wagmi'
+import HomeTest from './HomeTest'
+
+import type { CustomFlowbiteTheme } from 'flowbite-react';
+import { Flowbite } from 'flowbite-react';
+import { BrowserRouter } from 'react-router-dom'
+
+const customTheme: CustomFlowbiteTheme = {
+  button: {
+    color: {
+      //primary: 'bg-red-500  dark:bg-cyan-100',
+    },
+  },
+};
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
-    <WagmiConfig config={config}>
-      <App />
-    </WagmiConfig>
-  </React.StrictMode>,
+    <BrowserRouter>
+      <Flowbite theme={{ theme: customTheme, dark: true }}>
+        <WagmiConfig config={config}>
+          <HomeTest />
+        </WagmiConfig>
+      </Flowbite>
+    </BrowserRouter>
+  </React.StrictMode >,
 )
