@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import IProps from '../../interface/IProps';
-import IToken from '../../interface/Itoken';
+import IToken from '../../interface/IToken';
 
 interface ISwapContext {
     token0?: IToken;
