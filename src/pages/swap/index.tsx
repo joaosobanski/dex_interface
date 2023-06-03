@@ -1,8 +1,11 @@
+import { SwapProvider } from "./context"
 
 
 const Swap: React.FunctionComponent = () =>
-    <div>
-        Swap
-    </div>
+    <SwapProvider>
+        <span>
+            Swap
+        </span>
+    </SwapProvider>
 
 export default Swap

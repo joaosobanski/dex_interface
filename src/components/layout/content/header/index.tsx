@@ -10,6 +10,7 @@ const ContentHeader: React.FunctionComponent = () => {
     const [path, setPath] = useState<string[]>([]);
 
     const { pathname } = useLocation();
+
     useEffect(() => {
         let values = [] as string[];
 
