@@ -17,4 +17,4 @@ To learn more about [Vite](https://vitejs.dev/) or [wagmi](https://wagmi.sh), ch
 
 # Icons
 
-<a target="_blank" href=" https://heroicons.dev/">Icones</a>
+- Icones HeroIcons]([https://wagmi.sh](https://heroicons.dev/)) – Icones.
